@@ -1,0 +1,127 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c002b;
+    height: 100vh;
+}
+@font-face {
+    font-family: delagothic;
+    src: url('./DelaGothicOne-Regular.ttf');
+}
+#cardContainer{
+    position: absolute;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 500px;
+    height: 650px;
+    z-index: 5;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#cardContainer::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg,#1670f0,purple);
+    z-index: 1;
+    transform: translate(-250px, -120px);
+}
+#cardContainer::after{
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg,#1670f0,purple);
+    z-index: 1;
+    transform: translate(250px, 120px);
+    
+}
+form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form input{
+    display: block;
+    margin: 10px 0px;
+}
+h3{
+    position: absolute;
+    top: 0px;
+    font-family: delagothic;
+    font-size: 50px;
+    text-shadow: 0 0 10px #1670f0;
+    color: white;
+    letter-spacing: 0px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+#valor{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: delagothic;
+}
+#converter{
+
+    height: 60px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(120deg,#1670f0,purple);
+    font-size: 16px;
+    box-shadow: 0 0 5px #1900ff67;
+    transition: 500ms;
+    width: 60%;
+    font-family: delagothic;
+    margin-top: 30px;
+}
+#converter:hover{
+    box-shadow: 0 0 30px #1900ff67;
+    width: 65%;
+}
+h1{
+    position: absolute;
+    bottom: 60px;
+    font-family: delagothic;
+    font-size: 50px;
+    text-shadow: 0 0 10px #1670f0;
+    color: white;
+    letter-spacing: 0px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+h2{
+    color: white;
+    font-family: delagothic;
+    position: absolute;
+    bottom: 170px;
+
+    text-shadow: 0 0 10px #1670f0;
+    text-transform: capitalize;
+}
