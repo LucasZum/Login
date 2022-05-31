@@ -19,7 +19,7 @@ function conversor() {
 
         document.getElementById("res").innerHTML = resultado
 
-        res.classList.toggle("aparecer")
+        res.classList.add("aparecer")
  
 
         
