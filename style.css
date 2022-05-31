@@ -106,8 +106,6 @@ h3{
     width: 65%;
 }
 h1{
-    position: absolute;
-    bottom: 60px;
     font-family: delagothic;
     font-size: 50px;
     text-shadow: 0 0 10px #1670f0;
@@ -115,6 +113,10 @@ h1{
     letter-spacing: 0px;
     line-height: 60px;
     text-transform: capitalize;
+    position: relative;
+    bottom: -100px;
+    transition: 300ms;
+    
 }
 h2{
     color: white;
@@ -124,4 +126,24 @@ h2{
 
     text-shadow: 0 0 10px #1670f0;
     text-transform: capitalize;
+}
+h4{
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    color: white;
+    font-family: delagothic;
+    text-shadow: 0 0 10px #1670f0;
+    text-transform: capitalize;
+    font-size: 23px;
+    
+}
+.resContainer{
+    position: absolute;
+    bottom: 60px;
+    display: inline-block;
+    overflow: hidden;
+}
+.aparecer{
+    bottom: 0;
 }

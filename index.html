@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Dólar p/ Real</title>
 </head>
-<body>
+<body onload="valor_dolar()">
     
     <div id="cardContainer">
         <div class="container card">
@@ -16,8 +16,12 @@
                 <input placeholder="Digite aqui..." id="valor" type="text">
                 <input type="button" value="Converter" id="converter" onclick="conversor()">
                 <h2>----- RESULTADO -----</h2>
-            </form>        
-            <h1 id="res"></h1>
+            </form>
+            <div class="resContainer">
+                <h1 class="" id="res">23</h1>                
+            </div>        
+
+            <h4 id="valor_dolar_h4"></h4>
         </div>        
     </div>
 
