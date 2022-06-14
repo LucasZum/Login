@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="./style.css">
     <title>Dólar p/ Real</title>
 </head>
-<body onload="valor_dolar()">
+<body>
     
     <div id="cardContainer">
         <div class="container card">
             <form>
                 <h3>Login</h3>
-                <input placeholder="Usuário" id="valor" type="text">
-                <input placeholder="Senha" id="valor" type="password">
-                <input type="button" value="Entrar" id="converter" onclick="conversor()">
+                <input placeholder="Usuário" id="usuario" class="valor" type="text">
+                <input placeholder="Senha" id="senha" class="valor" type="password">
+                <a id="entrar" onclick="validarLogin()">
+                    Entrar
+                </a>
             </form>
         </div>        
     </div>
@@ -23,6 +25,6 @@
 
 
 
-    <script src="./real-time-conversor.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
