@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0f0f0f;
+    background-color: #0f0f0fee;
     height: 100vh;
     width: 100%;
 
@@ -160,7 +160,7 @@ h4{
     bottom: 0;
 }
 
-@media (max-width: 400px){
+@media (max-width: 600px){
 
     #cardContainer::after{
         display: none;
